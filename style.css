@@ -11,6 +11,7 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100vw;
     min-height: 98vh;
     font-family: var(--font);
     background-color: #fff;
@@ -53,7 +54,7 @@ body {
 
 #userName {
     color: var(--accentColor);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 1.25;
     display: block;
@@ -115,7 +116,7 @@ footer {
     background-color: transparent;
     color: var(--accentColor);
     text-align: center;
-    padding: 20px;
+    padding-bottom: 20px;
     font-size: 0.8rem;
     z-index: 3; /* Ensure it's above other elements */
 }
