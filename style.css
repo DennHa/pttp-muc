@@ -147,5 +147,8 @@ footer {
     color: var(--accentColor);
 }
 
-
+#impressumPage{
+    margin-left: 2vw;
+    max-width: 70vw;
+}
 
