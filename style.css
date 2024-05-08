@@ -16,7 +16,7 @@ body {
     font-family: var(--font);
     background-color: #fff;
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(85,207,255,1) 100%);
-    overflow: hidden; /* Disable scrolling */
+    overflow-x:hidden; /* Disable scrolling */
     
 
 }
@@ -111,11 +111,11 @@ body {
 }
 
 footer {
+    background-color: #fff;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: transparent;
     color: var(--accentColor);
     text-align: center;
     padding-bottom: 10px;
@@ -127,6 +127,7 @@ footer {
     color: var(--accentColor);
     text-decoration: none;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .impressum:hover {
