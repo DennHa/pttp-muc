@@ -105,6 +105,14 @@ a:active {
     letter-spacing: 0.2rem;
 }
 
+.register{
+    background-color: #66666600;
+    color: #666;
+    border: #666;
+    border: 2px solid;
+
+}
+
 .partners img {
     height: 100px;
     margin-right: 25px;
