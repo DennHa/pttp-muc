@@ -4,6 +4,10 @@ body {
     padding: 0;
     max-width: 100vw;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    
+}
+.inner_body{
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 a {
@@ -70,19 +74,21 @@ a:active {
 }
 
 .cta-partners {
-    flex: 0;
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 4vh;
     color: #666;
+    width: 100%;
 }
 
 .cta-container, .partners {
     text-align: left;
     min-width: 200px;
     padding-top: 2vw;
+    padding-right: 4vw;
 }
 
 .cta-button {
@@ -220,57 +226,21 @@ a:active {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        padding: 2vh 4vw;
-    }
 
-    .header-content {
-        align-items: center;
-        text-align: center;
-    }
-
-    .header-text {
-        text-align: center;
-    }
-
-    .header h1 {
-        font-size: 1.5em;
-    }
-
-    .header h2 {
-        font-size: 3rem;
-    }
-
-    .cta-partners {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .cta-container, .partners {
-        padding-top: 4vw;
-    }
-
-    .header-logo img {
-        max-height: 50vh;
-        min-width: 200px;
-    }
-
-    .text-section p {
-        padding: 0 6vw;
-        font-size: 1.5em;
-    }
-}
 
 @media (max-width: 480px) {
+    .header{
+        background-image: url(img/Background3.png);
+        background-repeat:no-repeat;
+    }
     .header h1 {
         font-size: 1.2em;
+        text-align: center;
     }
 
     .header h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        text-align: center;
     }
 
     .header-logo img {
@@ -281,10 +251,39 @@ a:active {
     .text-section p {
         padding: 0 4vw;
         font-size: 1.2em;
+        text-align: center;
     }
 
-    .cta-button {
-        font-size: 1.2em;
-        padding: 15px 30px;
+    .partners{
+        width: 100%;
+        text-align: center;
+
     }
+
+    .cta-container{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 4vh;
+    }
+
+
+    .cta-button {
+        white-space:nowrap;
+
+        font-size: 1.4em;
+        padding: 25px 20vw;
+        text-align: center;
+
+    }
+    .partners img {
+        width: 30vw;
+        height: auto;
+        
+    }
+    .info-section {
+
+        font-size: 1em;
+
+    }
+
 }
