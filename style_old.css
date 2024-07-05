@@ -4,6 +4,7 @@
     --bgColor: #fff;
     --bgColor2: #fff;
     --accentColor: #003d83;
+    --accentColor2: #003d834b;
     --font: "Besley", serif;
 
 }
@@ -12,13 +13,18 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    min-height: 98vh;
+    height: 98vh;
     font-family: var(--font);
     background-color: #fff;
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(85,207,255,1) 100%);
-    overflow-x:hidden; /* Disable scrolling */
-    
+    overflow-x: hidden; /* Disable horizontal scrolling by default */
+    overflow-y: auto; /* Enable vertical scrolling by default */
+}
 
+@media (min-width: 768px) { /* Apply styles for viewports wider than 768px (desktop view) */
+    body {
+        overflow-y: hidden; /* Disable vertical scrolling on desktop */
+    }
 }
 .background-container {
     position: relative;
@@ -50,6 +56,7 @@ body {
     background-size:contain;
     background-position: center;
     height: 40vh;
+    min-height: 200px;
     z-index: 20;
 }
 
@@ -133,7 +140,7 @@ footer {
     text-align: center;
     padding-bottom: 10px;
     font-size: 0.8rem;
-    z-index: 3; /* Ensure it's above other elements */
+    z-index: 300; /* Ensure it's above other elements */
 }
 
 .impressum {
@@ -152,3 +159,42 @@ footer {
     max-width: 70vw;
 }
 
+.hands-bg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh; /* Höhe auf 10vh beschränken */
+    min-height: 5vh;
+    background-image: url('img/hands.svg'); /* Pfad zu deinem Bild */
+    background-repeat: repeat-x; /* Wiederholen auf der x-Achse */
+    background-position: calc(100% - 100px) bottom; /* Adjust offset by -20px */
+    background-size: auto 100%; /* Automatische Breite, Höhe 100% */
+    z-index: -1; /* In den Hintergrund senden */
+} 
+
+#sponsors {
+    color: var(--accentColor2);
+    padding: 20px 0;
+    text-align: center;
+}
+
+#sponsors h2 {
+    color: var(--accentColor);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.sponsor-logo {
+    max-width: 180px;
+    height: auto;
+}
