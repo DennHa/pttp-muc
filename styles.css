@@ -80,7 +80,7 @@ a:active {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-top: 4vh;
     color: #666;
