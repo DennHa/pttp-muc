@@ -233,6 +233,81 @@ a:active {
     cursor: pointer;
 }
 
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+#mc-embedded-subscribe-form input[type=checkbox] {
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+}
+
+#mergeRow-gdpr {
+    margin-top: 20px;
+}
+
+#mergeRow-gdpr fieldset label {
+    font-weight: normal;
+}
+
+#mc-embedded-subscribe-form .mc_fieldset {
+    border: none;
+    min-height: 0px;
+    padding-bottom: 0px;
+}
+
+.newsletter h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.newsletter label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.newsletter input[type=email], .newsletter input[type=text] {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter input[type=submit] {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter .foot {
+    text-align: center;
+}
+
+.newsletter .refferal_badge {
+    width: 220px;
+    height: 40px;
+    display: flex;
+    padding: 2px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 /* Media Queries */
 
@@ -294,5 +369,27 @@ a:active {
         font-size: 1em;
 
     }
+    .newsletter{
+        max-width: 90vw;
+    }
+
+    #mc_embed_signup {
+        padding: 10px;
+    }
+
+    .newsletter h2 {
+        font-size: 1.4em;
+    }
+
+    .newsletter input[type=email], .newsletter input[type=text] {
+        padding: 6px;
+    }
+
+    .newsletter input[type=submit] {
+        padding: 6px;
+    }
+
+
 
 }
+
