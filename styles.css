@@ -204,7 +204,8 @@ a:active {
 
 .event-cards img {
     margin: 10px;
-    min-width: 200px;
+    
+    height: 400px;
 }
 
 .carouselle {
@@ -395,6 +396,13 @@ a:active {
 
     .newsletter input[type=submit] {
         padding: 6px;
+    }
+    .carouselle img {
+        width: 100%;
+        max-height: auto;
+        max-width: 100vw;
+        min-width: 250px;
+        padding: 0.25vw;
     }
 
 
