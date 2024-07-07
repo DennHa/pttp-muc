@@ -41,7 +41,6 @@ body {
 
 .inner_body {
     overflow-x: hidden;
-    
 }
 
 /* Link Styles */
@@ -372,8 +371,7 @@ a:active {
     cursor: pointer;
 }
 
-/* Media Queries */  
-
+/* Media Queries */
 @media (max-width: 480px) {
     .header {
         background-image: url(img/Background3.png);
