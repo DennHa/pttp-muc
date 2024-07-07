@@ -417,8 +417,12 @@ a:active {
         text-align: center;
     }
 
+    .partners{
+        align-items: center;
+        margin-right: 0;
+    }
     .partners img {
-        width: 30vw;
+        width: 50vw;
         height: auto;
     }
 
