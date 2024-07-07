@@ -424,6 +424,7 @@ a:active {
     .partners img {
         width: 50vw;
         height: auto;
+        margin-right: 0;
     }
 
     .info-section {
