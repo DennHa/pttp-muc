@@ -191,7 +191,7 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 22vh;
+    min-height: 26vh;
 }
 
 .text-section {
@@ -211,7 +211,7 @@ a:active {
 .text-section p {
     font-size: var(--font-size-xlarge);
     padding: 0 var(--spacing-large);
-    font-weight: bold;
+    
     line-height: 2.5rem;
     outline: var(--color-outline) 1px;
 }
