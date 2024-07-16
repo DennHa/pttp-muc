@@ -39,6 +39,10 @@ body {
     overflow-x: hidden;
 }
 
+.brIphone{
+    display: none;
+}
+
 .inner_body {
     overflow-x: hidden;
 }
@@ -378,6 +382,10 @@ a:active {
 
 /* Media Queries */
 @media (max-width: 480px) {
+    .brIphone{
+        display: block;
+    }
+    
     .header {
         background-image: url(img/Background3.png);
         background-repeat: no-repeat;
