@@ -194,6 +194,11 @@ a:active {
     min-height: 26vh;
 }
 
+.discordIMG{
+    max-height: 50px;
+    transform: translate(0,20px);
+}
+
 .text-section {
     background-image: url(img/background2.png);
     background-repeat: no-repeat;
