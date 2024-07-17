@@ -31,6 +31,24 @@ html {
     background-color: var(--color-background);
 }
 
+.language-switcher {
+
+    position: absolute;
+    top: 16px; /* Adjust the value to control the distance from the top */
+    right: 16px; /* Adjust the value to control the distance from the right */
+    background-color: #fff; /* Optional: background color for better visibility */
+    padding: 5px 10px; /* Optional: padding for better click area */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for better visibility */
+    font-size: 24px; /* Optional: font size */
+}
+
+.language-switcher a{
+    text-decoration: none; 
+}
+.selectedLanguage {
+    text-decoration: underline;
+}
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
