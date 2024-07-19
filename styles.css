@@ -31,24 +31,6 @@ html {
     background-color: var(--color-background);
 }
 
-.language-switcher {
-
-    position: absolute;
-    top: 8px; /* Adjust the value to control the distance from the top */
-    right: 8px; /* Adjust the value to control the distance from the right */
-    background-color: #ffffff00; /* Optional: background color for better visibility */
-    margin: 5px 5px; /* Optional: padding for better click area */
-    border-radius: 5px; /* Optional: rounded corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for better visibility */
-    font-size: 24px; /* Optional: font size */
-}
-
-.language-switcher a{
-    text-decoration: none; 
-}
-.selectedLanguage {
-    text-decoration: underline;
-}
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -57,12 +39,23 @@ body {
     overflow-x: hidden;
 }
 
-.brIphone{
-    display: none;
+.language-switcher {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #ffffff00;
+    margin: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
 }
 
-.inner_body {
-    overflow-x: hidden;
+.language-switcher a {
+    text-decoration: none; 
+}
+
+.selectedLanguage {
+    text-decoration: underline;
 }
 
 /* Link Styles */
@@ -103,7 +96,7 @@ a:active {
 .content-logo {
     display: flex;
     justify-content: space-around;
-    align-items:flex-end;
+    align-items: flex-end;
     flex-wrap: wrap-reverse;
 }
 
@@ -194,7 +187,7 @@ a:active {
 }
 
 .header-logo {
-    margin-left:var( --spacing-medium);
+    margin-left: var(--spacing-medium);
     text-align: right;
     align-items: center;
     display: flex;
@@ -216,7 +209,7 @@ a:active {
     min-height: 26vh;
 }
 
-.discordIMG{
+.discordIMG {
     max-height: 50px;
     transform: translate(0,20px);
 }
@@ -273,6 +266,7 @@ a:active {
     background-color: #fff;
     text-align: center;
     padding: 20px;
+    font-size: var(--font-size-large);
 }
 
 .event-cards {
@@ -301,7 +295,7 @@ a:active {
     padding: 0.25vw;
 }
 
-/* Price Pool*/
+/* Prize Pool */
 .prizePool {
     display: flex;
     flex-direction: column;
@@ -354,15 +348,25 @@ a:active {
 }
 
 /* Newsletter Styles */
+
 .newsletter {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #fff;
+    align-items: center;
+    background-color: var(--color-background);
+    padding: 24px 0px;
 }
+.newsletter h3{
 
+    text-align: center;
+    padding: 20px;
+    font-size: var(--font-size-large);
+    min-width: 90vw;
+
+}
 #mc_embed_signup {
-    background: #fff;
+    background: var(--color-background);
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
     width: 100%;
@@ -452,14 +456,15 @@ a:active {
 
 /* Media Queries */
 @media (max-width: 480px) {
-    .brIphone{
+    .brIphone {
         display: block;
     }
 
-    .language-switcher{
-        position: inline;
+    .language-switcher {
+        position: static;
         background-color: rgba(240, 248, 255, 0);
-
+        text-align: center;
+        margin: 10px 0;
     }
     
     .header {
@@ -482,14 +487,15 @@ a:active {
         min-width: 150px;
     }
 
-    .content-logo{
+    .content-logo {
         margin-top: 30px;
     }
 
     .text-section p {
-        padding: 0 4vw;
-        font-size: var(--font-size-medium);
-        text-align: center;
+        padding: 0 2vw;
+        font-size: var(--font-size-small);
+        text-align: left;
+        line-height: 1.5rem;
     }
 
     .partners {
@@ -503,22 +509,32 @@ a:active {
         padding-bottom: var(--spacing-small);
     }
 
-    .cta-button {
-        white-space: nowrap;
-        font-size: 1.4em;
-        padding: 25px 20vw;
-        text-align: center;
+    .cta-button, .register {
+        width: calc(100% - 20px); /* Breite auf 100% minus etwas Padding setzen */
+        padding: 15px; /* Padding für besseren Abstand */
+        margin: 10px 0; /* Abstand oben und unten */
+        box-sizing: border-box; /* Box-Sizing für korrektes Padding */
+        text-align: center; /* Text zentrieren */
+        white-space: nowrap; /* Text in einer Zeile halten */
+    }
+    .register {
+        width: calc(100% - 20px); /* Breite auf 100% minus etwas Padding setzen */
+        padding: 15px; /* Padding für besseren Abstand */
+        margin: 10px 0; /* Abstand oben und unten */
+        box-sizing: border-box; /* Box-Sizing für korrektes Padding */
+        text-align: center; /* Text zentrieren */
     }
 
-    .discordIMG{
+    .discordIMG {
         max-height: 20px;
         transform: translate(0,10px);
     }
 
-    .partners{
+    .partners {
         align-items: center;
         margin-right: 0;
     }
+
     .partners img {
         width: 50vw;
         height: auto;
@@ -528,6 +544,28 @@ a:active {
     .info-section {
         font-size: var(--font-size-small);
     }
+    .image-section {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    .image-section img {
+        width: 100%;
+        height: auto;
+        max-width: 100vw;
+    }
+    .event-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the cards */
+        
+    }
+
+    .event-cards img {
+        width: 90%; /* Adjusted width for smaller screens */
+        height: auto;
+        
+    }
+
     .prizes {
         flex-direction: column;
         align-items: center;
@@ -537,26 +575,41 @@ a:active {
         flex: 1 1 100%;
         max-width: 100%;
     }
+    .prize-item p{
+        text-align: left;
+        font-size: var(--font-size-small);
+    }
 
     .newsletter {
-        max-width: 100vw;
+        padding: 10px; /* Padding für besseren Abstand */
+        box-sizing: border-box; /* Box-Sizing für korrektes Padding */
+        width: 100%; /* Breite auf 100% setzen */
+        max-width: 100%; /* Max-Breite auf 100% setzen */
     }
 
     #mc_embed_signup {
-        padding: 10px;
+        padding: 10px; /* Padding für besseren Abstand */
+        width: 100%; /* Breite auf 100% setzen */
+        box-sizing: border-box; /* Box-Sizing für korrektes Padding */
     }
 
     .newsletter h2 {
-        font-size: 1.4em;
+        font-size: 1.4em; /* Angepasste Schriftgröße */
+        margin-bottom: 10px;
     }
 
     .newsletter input[type=email],
     .newsletter input[type=text] {
-        padding: 6px;
+        padding: 10px; /* Erhöhtes Padding für bessere Benutzerfreundlichkeit */
+        margin-bottom: 10px; /* Abstand unten */
+        width: 100%; /* Breite auf 100% setzen */
+        box-sizing: border-box; /* Box-Sizing für korrektes Padding */
     }
 
     .newsletter input[type=submit] {
-        padding: 6px;
+        padding: 10px; /* Erhöhtes Padding für bessere Benutzerfreundlichkeit */
+        width: 100%; /* Breite auf 100% setzen */
+        box-sizing: border-box; /* Box-Sizing für korrektes Padding */
     }
 
     .carouselle img {
@@ -567,6 +620,7 @@ a:active {
         padding: 0.25vw;
     }
 }
+
 /* Media query for screens larger than 1902px */
 @media (min-width: 1902px) {
     .prize-item {
