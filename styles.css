@@ -559,10 +559,16 @@ h3 {
         
     }
 
+    .carouselle img {
+        flex: 1 1 100%; /* Each image takes up the full width on smaller screens */
+        max-width: 100%;
+        min-width: 100%;
+    }
+
     .event-cards img {
-        width: 90%; /* Adjusted width for smaller screens */
-        height: auto;
-        
+        flex: 1 1 100%; /* Each image takes up the full width on smaller screens */
+        max-width: 100%;
+        height: auto; /* Ensure the height adjusts automatically */
     }
 
     .prizes {
