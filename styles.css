@@ -25,6 +25,15 @@
     --border-radius: 25px;
 }
 
+.lazy {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lazy.loaded {
+    opacity: 1;
+}
+
 /* Base Styles */
 html {
     scroll-behavior: smooth;
