@@ -566,9 +566,12 @@ h3 {
     }
 
     .event-cards img {
-        flex: 1 1 100%; /* Each image takes up the full width on smaller screens */
+        flex: 1 ;
         max-width: 100%;
-        height: auto; /* Ensure the height adjusts automatically */
+        max-height: 320px;
+        margin: 10px;
+        height: auto;
+
     }
 
     .prizes {
@@ -579,6 +582,7 @@ h3 {
     .prize-item {
         flex: 1 1 100%;
         max-width: 100%;
+        max-height: 100%;
     }
     .prize-item p{
         text-align: left;
