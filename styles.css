@@ -453,7 +453,7 @@ h3 {
         text-align: center;
     }
     h3{
-        font-size: var(--font-size-medium);
+        font-size: var(--font-size-xlarge);
     }
 
     .header{
@@ -562,6 +562,10 @@ h3 {
     .prize-item p{
         text-align: left;
         font-size: var(--font-size-small);
+    }
+
+    .more-to-announce{
+        font-size: var(--font-size-medium);
     }
 
     .newsletter {
