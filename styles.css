@@ -452,6 +452,9 @@ h3 {
         font-size: 2.2rem;
         text-align: center;
     }
+    h3{
+        font-size: var(--font-size-medium);
+    }
 
     .header{
         font-size: var(--font-size-small);
