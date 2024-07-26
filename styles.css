@@ -505,7 +505,7 @@ h3 {
 
     .discordIMG {
         max-height: 20px;
-        transform: translate(0,10px);
+        transform: translate(0,5px);
     }
 
     .partners {
@@ -521,6 +521,12 @@ h3 {
 
     .info-section {
         font-size: var(--font-size-small);
+        
+    }
+
+ 
+    .main-content p{
+        padding-bottom: 10vh;
     }
     .image-section {
         flex: 1 1 100%;
