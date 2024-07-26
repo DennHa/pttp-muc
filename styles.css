@@ -285,7 +285,8 @@ h3 {
 .previous-events {
     background-color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: var(--spacing-large) 0;
+
 
 }
 .info-section-pe {
