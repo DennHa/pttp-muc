@@ -646,7 +646,7 @@ h3 {
 /* Media query for screens larger than 1902px */
 @media (min-width: 1902px) {
     .prize-item {
-        flex: 1 1 calc(20% - 20px);
-        max-width: calc(20% - 20px);
+        flex: 1 1 calc(30% - 20px);
+        max-width: calc(40% - 20px);
     }
 }
