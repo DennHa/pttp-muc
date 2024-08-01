@@ -255,6 +255,7 @@ h3 {
 .text-section p {
     font-size: var(--font-size-xlarge);
     padding: 0 var(--spacing-large);
+    padding-bottom: 5vh;
     max-width: 80vw;
     line-height: 2.5rem;
     outline: var(--color-outline) 1px;
