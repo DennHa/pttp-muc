@@ -253,7 +253,7 @@ h3 {
 }
 
 .text-section p {
-    font-size: var(--font-size-xlarge);
+    font-size: var(--font-size-large);
     padding: 0 var(--spacing-large);
     padding-bottom: 5vh;
     max-width: 80vw;
@@ -274,7 +274,8 @@ h3 {
 .info-section {
     flex: 1;
     margin: 0 var(--spacing-large);
-    font-size: var(--font-size-medium);
+    padding: var(--spacing-small) 0;
+    font-size: var(--font-size-large);
     min-width: 300px;
 }
 
@@ -285,6 +286,7 @@ h3 {
 .image-section {
     flex: 1;
     text-align: left;
+
 }
 
 .image-section img {
@@ -308,7 +310,7 @@ h3 {
 }
 .info-section-pe p{
     margin: 0 var(--spacing-large);
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-large);
     max-width: 50vw;
 }
 .event-cards {
