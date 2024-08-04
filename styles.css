@@ -243,20 +243,23 @@ h3 {
     background-size: cover;
     color: var(--color-primary);
     min-height: 20vh;
-    min-width: 100vw;
+    min-width: 80vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    align-content: space-between;
     text-align: left;
+
     
 }
 
 .text-section p {
+    flex: 1;
     font-size: var(--font-size-large);
-    padding: 0 var(--spacing-large);
-    padding-bottom: 5vh;
+    padding: 0 var(--spacing-small) 5vh var(--spacing-small);
     max-width: 80vw;
+    min-width: 20vw;
     line-height: 2.5rem;
     outline: var(--color-outline) 1px;
 
@@ -493,8 +496,13 @@ h3 {
         margin-top: 30px;
     }
 
+    .text-section{
+        flex-direction: column;
+        padding-bottom:  var(--spacing-large);
+    }
+
     .text-section p {
-        padding: 0 2vw;
+        padding: 0 var(--spacing-large) ;
         font-size: var(--font-size-small);
         text-align: left;
         line-height: 1.5rem;
@@ -548,10 +556,6 @@ h3 {
         
     }
 
- 
-    .main-content p{
-        padding-bottom: 10vh;
-    }
     .image-section {
         flex: 1 1 100%;
         text-align: center;
