@@ -219,6 +219,12 @@ h3 {
     min-height: 20vh;
     min-width: 250px;
 }
+.soldOut{
+    color: var(--color-link-active);
+    font-size: var(--font-size-xlarge);
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 /* Main Content Styles */
 .main-content {
